@@ -6,7 +6,7 @@ function FindProxyForURL(u, h) {
     if (h === "appdownload.itunes.apple.com" || dnsDomainIs(h, "battlenet.com.cn") || dnsDomainIs(h, "dist.blizzard.com.edgesuite.net") || /us-ore-\d+\.s3\.amazonaws\.com/.test(h) || /ap-sin-\d+\.s3.amazonaws\.com/.test(h)) {
         return "DIRECT"
     }
-    if (/\.?blogspot\.\w{2}$/.test(h) || /\.google\.com\.\w{2}$/.test(h) || /(google\.\w{2}$|google\.co\.\w{2}$)/.test(h) || /rdio[^\.]*\.akamaihd\.net/.test(h) || /.*rdio.com/.test(h))return "PROXY 120.27.81.120:56666";
+    if (/\.?blogspot\.\w{2}$/.test(h) || /\.google\.com\.\w{2}$/.test(h) || /(google\.\w{2}$|google\.co\.\w{2}$)/.test(h) || /rdio[^\.]*\.akamaihd\.net/.test(h) || /.*rdio.com/.test(h))return "PROXY 218.65.54.11:56666";
     a = ["tudou.com", "weibo.com", "xunlei.com", "pptv.com", "sohu.com", "taobao.com", "qq.com", "163.com", "sina.cn", "alipay.com", "youku.com"];
     for (i = 0; i < a.length; i++) {
         if (dnsDomainIs(h, a[i])) {
